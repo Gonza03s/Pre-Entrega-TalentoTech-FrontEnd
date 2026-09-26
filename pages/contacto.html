@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styless.css" />
+    <link rel="stylesheet" href="/css/contacto.css" />
+    <title>Contacto - Talento Tech Ecommerce</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="header-container">
+        <div class="header-logo-container">
+          <a href="../index.html"><i class="fa-solid fa-store fa-xl"></i></a>
+        </div>
+
+        <input type="checkbox" name="" id="nav-toggle" class="nav-toggle" />
+
+        <label for="nav-toggle" class="nav-toggle-label">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </label>
+
+        <div class="nav-container">
+          <nav class="nav-content">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="#">Tienda</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Acerca de</a></li>
+              <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section id="form-contact-section">
+        
+        <form class="form-container" action="">
+
+            <div class="form-title">
+              <h1>¡Contáctanos!</h1>
+              <p>Nos encantaría saber de ti. Envíanos un mensaje.</p>
+            </div>
+
+          <div class="input-nombre-container">
+            <label for="nombre">Nombre</label>
+            <input class="input-style" id="nombre" type="text"  required placeholder="Tu nombre" />
+          </div>
+
+          <div class="input-email-container">
+            <label for="email">Correo Electrónico</label>
+            <input class="input-style" id="email" type="email"  required placeholder="ejemplo@correo.com" />
+          </div>
+
+          <div class="input-asunto-container">
+            <label for="asunto">Asunto</label>
+            <input class="input-style" id="asunto" type="text"  required placeholder="¿En qué podemos ayudarte?" />
+          </div>
+
+          <div class="text-area-container">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="" id="mensaje" placeholder="Tu mensaje" required ></textarea>
+          </div>
+
+          <div class="boton-container">
+            <button type="submit">Enviar</button>
+          </div>
+
+        </form>
+
+        <div class="img-form-container">
+          <img src="/assets/img/form-img.png" alt="" />
+        </div>
+
+      </section>
+
+
+      <section class="ubicacion-container">
+
+        <div class="ubicacion-text-container">
+          <h2>¿Dónde encontrarnos?</h2>
+          <p>Visitanos en nuestra sede central en Buenos Aires</p>
+        </div>
+
+        <div class="mapa-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9847266774455!2d-58.38415842346471!3d-34.60373537295286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf22b96b23%3A0x4fcaa0e8e7c38765!2sAv.%20de%20Mayo%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715000000000!5m2!1ses!2sar"
+            width="100%"
+            height="400"
+            style="border: 0; border-radius: 20px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación de la tienda en Buenos Aires"
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <section class="newsletter-container">
+
+        <div class="newsletter-info">
+          <h4>Suscribite al Newsletter</h4>
+          <p>
+            Recibí novedades de nuestra tienda y <span>ofertas exclusivas</span>
+          </p>
+        </div>
+
+        <form class="form-newsletter" action="/suscribir" method="POST">
+          <input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            placeholder="Tu correo electrónico"
+            required
+          />
+          <button type="submit">Suscribirse</button>
+        </form>
+        
+      </section>
+
+
+    </main>
+
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="contacto-container">
+          <h4>Contacto</h4>
+          <p>Direccion: Av. Siempreviva 742, Ciudad Autónoma de Buenos Aires</p>
+          <p>Teléfono: +54 11 1234 5678</p>
+          <p>Horario: 9:00 - 18:00, Lunes a Viernes</p>
+
+          <div class="icons-footer">
+            <i class="fab fa-instagram fa-xl"></i>
+            <i class="fab fa-youtube fa-xl"></i>
+            <i class="fab fa-twitter fa-xl"></i>
+          </div>
+        </div>
+
+        <div class="my-account-container">
+          <h4>Mi cuenta</h4>
+          <a href="#">Iniciar sesion</a>
+          <a href="#">Ver carrito</a>
+          <a href="#">Ayuda</a>
+        </div>
+
+        <div class="download-container">
+          <div class="download-text-container">
+            <h4>Descarga la app</h4>
+            <p>Desde App Store o Google Play</p>
+          </div>
+
+          <div class="download-img-container">
+            <img src="/assets/img/app.jpg" alt="" />
+            <img src="/assets/img/play.jpg" alt="" />
+          </div>
+
+          <p>Pasarelas de pago seguras</p>
+          <div class="payment-gateway-container">
+            <img src="/assets/img/pay.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script
+      src="https://kit.fontawesome.com/9a6b3e7aef.js"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
